@@ -18,12 +18,6 @@ userRegistrationForm.LastName = Console.ReadLine()!;
 Console.WriteLine("Enter your email: ");
 userRegistrationForm.Email = Console.ReadLine()!;
 
-Console.WriteLine("Enter your password: ");
-userRegistrationForm.Password = Console.ReadLine()!;
-
-Console.WriteLine("Confirm your password: ");
-userRegistrationForm.ConfirmPassword = Console.ReadLine()!;
-
 #endregion
 
 // Console.WriteLine($"Your name is {user.FullName}");
@@ -31,9 +25,8 @@ userRegistrationForm.ConfirmPassword = Console.ReadLine()!;
 var userEntity = UserFactory.Create(userRegistrationForm);
 
 Console.WriteLine("");
-Console.WriteLine($"");
-Console.WriteLine("");
-Console.WriteLine("");
-Console.WriteLine("");
+Console.WriteLine($"{"Id:", -15}{userEntity.Id}");
+Console.WriteLine($"{"Name:",-15}{userEntity.FirstName} {userEntity.LastName}");
+Console.WriteLine($"{"Email:",-15}{userEntity.Email}");
 
 Console.ReadKey();

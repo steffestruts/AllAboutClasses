@@ -15,8 +15,8 @@ public static class UserFactory
             FirstName = userRegistrationForm.FirstName,
             LastName = userRegistrationForm.LastName,
             Email = userRegistrationForm.Email,
-            Password = SecurePasswordGenerator.Generate(userRegistrationForm.Password),
-            EmailConfirmed = false
+            // Password = SecurePasswordGenerator.Generate(userRegistrationForm.Password),
+            // EmailConfirmed = false
         };
     }
 }
